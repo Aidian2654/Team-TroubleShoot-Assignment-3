@@ -7,7 +7,7 @@
   <title>Team Troubleshoot's Assignment 3</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -43,626 +43,693 @@
     </nav>
   </div>
 
-  <!-- TEAM PROFILE SECTION -->
-  <div id="team-profile" class="py-5 section-team-profile">
-    <div class="container">
-      <h2 class="mb-5">Team Profile</h2>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="3"></li>
+      <li data-target="#carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <!-- TEAM PROFILE SECTION -->
+      <div class="carousel-item active">
+        <div id="team-profile" class="py-5 section-team-profile">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-6">
+                <h2>
+                  Team Profile
+                </h2>
+              </div>
+              <div class="col-6 text-right mt-auto mb-auto">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select a section...
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="showProfileSection('#team-profile_team')">Team Name</a>
+                    <a class="dropdown-item" onclick="showProfileSection('#team-profile_personal-info')">Personal Information</a>
+                    <a class="dropdown-item" onclick="showProfileSection('#team-profile_group-processes')">Group Processses</a>
+                    <a class="dropdown-item" onclick="showProfileSection('#team-profile_career-plans')">Career Plans</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <h3>Team Name</h3>
-      <p>
-        As a group we decided on the name “Team Troubleshoot”. We thought it was a memorable name
-        and the term troubleshoot is one that is relatable to IT.
-      </p>
+            <div id="team-profile_team">
+              <h3>Team Name</h3>
+              <p>
+                As a group we decided on the name “Team Troubleshoot”. We thought it was a memorable name
+                and the term troubleshoot is one that is relatable to IT.
+              </p>
+            </div>
 
-      <h3>Personal Information</h3>
+            <div style="display: none;" id="team-profile_personal-info">
+              <h3>Personal Information</h3>
 
-      <div class="row">
-        <div class="col">
-          <p class="font-weight-bold">
-            Bryce Allen (Student Number: s3501413)
-          </p>
-        </div>
-        <div class="col text-right">
-          <a href="https://brallens.github.io/IIT/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
-            Take me to Bryce's personal website
-            <i class="fas fa-external-link-alt ml-1"></i>
-          </a>
+              <div class="row">
+                <div class="col">
+                  <p class="font-weight-bold">
+                    Bryce Allen (Student Number: s3501413)
+                  </p>
+                </div>
+                <div class="col text-right">
+                  <a href="https://brallens.github.io/IIT/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
+                    Take me to Bryce's personal website
+                    <i class="fas fa-external-link-alt ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <p>
+                I’m Bryce – 25 years old and have just begun studying IT in order to expand my skillset.
+                I’ve moved back and forth between Ballarat and Melbourne the last few years, and have finally settled down back in Ballarat where I was born.
+                I currently work for a small company building high-end custom PCs for both personal and commercial use.
+                My role is essentially assembling, testing and troubleshooting our products. I’ve always had a passion for the hardware side of computing,
+                and hoping to expand my knowledge into the software side of things.
+                When I’m not working or tinkering, I play in a few bands locally and have a passion for audio engineering and sound production;
+                I’m most often found in my sketchy home studio amongst a tangle of cables and gear.
+              </p>
+
+              <div class="row">
+                <div class="col">
+                  <p class="font-weight-bold">
+                    Geoffrey Boyle (Student Number: s3871416)
+                  </p>
+                </div>
+                <div class="col text-right">
+                  <a href="https://geoffboyle.github.io/Assignment1/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
+                    Take me to Geoffrey's personal website
+                    <i class="fas fa-external-link-alt ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <p>
+                My name is Geoffrey Boyle and I am currently studying the Bachelor of Information Technology at
+                RMIT University. I am a member of Team Troubleshoot for our assessment tasks. I am currently 43
+                years of age and was born in Brisbane, Australia. My current employer is Australia Post, for the
+                past 13 years as a Postal Delivery Officer. My interests and hobbies consist of travelling,
+                playing rugby league, watching movies, fishing, and working with computers.
+                My interest in IT started back at high school, there are many different areas that I enjoy.
+                For that reason, the current field that I would like to pursue is still currently undecided.
+                Ideally to become multi-skilled with Networking, Web Development, and some Programming would be
+                my dream. With the variety of subjects on offer from RMIT University, it will expand my knowledge
+                and through study, I will find the career pathway that I will pursue in the future. My current
+                experience in IT relates to building computers, upgrading, diagnosing problems and repairs.
+                After completing high school in 1995, I had continued further study in Web Development, however
+                I need to retrain my skills in this field.
+              </p>
+
+              <div class="row">
+                <div class="col">
+                  <p class="font-weight-bold">
+                    Mitchell Cash (Student Number: s3740076)
+                  </p>
+                </div>
+                <div class="col text-right">
+                  <a href="https://mitchellcash-rmit.github.io/my-profile/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
+                    Take me to Mitchell's personal website
+                    <i class="fas fa-external-link-alt ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <p>
+                My name is Mitchell and I am a member of Team Troubleshoot. I am studying a Bachelor of
+                Information Technology at RMIT University and have a strong passion for technology and
+                software development. I grew up in Queensland, Australia and began my degree there while I
+                was working as a Business Analyst at a technology company in Brisbane City. Since then I have
+                moved to Scotland, UK and studying remotely from there while also working as a software
+                engineer. I have been working as a software developer for 1-2 years now and predominately am
+                focused on frontend development using Vue.js, but also work on some backend systems in PHP.
+                Currently some of my favourite tech I am playing with is Vue.js (with a close eye on the
+                upcoming v3 release), DevOps CI/CD, serverless development and containerization (Docker and
+                Kubernetes). If I am not playing around with tech I play (well played thanks to the pandemic)
+                a lot of social sport, including AFL, touch football and indoor soccer.
+              </p>
+
+              <div class="row">
+                <div class="col">
+                  <p class="font-weight-bold">
+                    Samuel Fairbrother (Student Number: S3813419)
+                  </p>
+                </div>
+                <div class="col text-right">
+                  <a href="https://fairbrsa.github.io/my-profile/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
+                    Take me to Samuel's personal website
+                    <i class="fas fa-external-link-alt ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <p>
+                My name is Sam Fairbrother and I am apart of Team Troubleshoot. I am currently living in Canberra
+                where I work as a chef in an Italian restaurant. I moved from my hometown of Newcastle in 2018 as
+                I was enrolled to study computer science at the ANU. I later had to withdraw from this course as
+                I had some health problems that required me to return home for a while. However, I have stayed in
+                Canberra as my fiancé has work obligations here. I am studying the Bachelor of IT through OUA as
+                I still have a great passion for IT and aim to start a career in the IT field. My main areas of
+                interest are business information systems and cyber security. My interests and hobbies include
+                cooking, rugby, gaming, and spending time by the beach. My interest in IT started when I began
+                playing video games when I was younger, this introduced me to the world of IT and eventually my
+                intrigue led me to learning more about different aspects of IT. Regarding my experience in IT, I
+                have always been the nominated IT-problem-solver of the household, whether it be fixing a computer,
+                the internet, printers etc, so I have had a lot of exposure to little things like this that then
+                require me to further research to solve the problem. One of the things that I love about IT is the
+                ability to solve a problem just through self-research online, and the great feeling that you get when
+                you are able to fix something.
+              </p>
+
+              <div class="row">
+                <div class="col">
+                  <p class="font-weight-bold">
+                    Emre Sezgin (Student Number: S3875131)
+                  </p>
+                </div>
+                <div class="col text-right">
+                  <a href="https://s3875131.github.io/My-Profile/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
+                    Take me to Emre's personal website
+                    <i class="fas fa-external-link-alt ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <p>
+                My name is Emre Sezgin and i am a member of team troubleshoot. I was born in Melbourne,
+                Victoria and now i reside in Brisbane, Queensland. I am undertaking a bachelor of IT
+                and my most up to date education is high school. Even thought I grew up in Melbourne my
+                nationality is Turkish/Australian, which means I also know Turkish as well and a little
+                bit of Arabic. I work in Aviation as a ground operations officer at Brisbane Airport (BNE).
+                An interesting fact about me is that even though I love Holdens very much and own one myself,
+                I was very close to buying a Ford and ruining my loyalty to Holden, sadly I am also
+                devastated that the great lion will not be with us any longer.
+
+                Some hobbies of mine are Tennis, video games, TV shows but mostly working on my car.
+                Fixing it myself and learning new stuff while at it. The most recent modification I
+                have done to it was installing a remote start module which allows it to remotly start with the
+                key, while pressing the lock button 3 times without the key even being inside the car.
+              </p>
+
+              <div class="row">
+                <div class="col">
+                  <p class="font-weight-bold">
+                    Aidian Withers (Student Number: s3874333)
+                  </p>
+                </div>
+                <div class="col text-right">
+                  <a href="https://aidian2654.github.io/Assignment-1/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
+                    Take me to Aidian's personal website
+                    <i class="fas fa-external-link-alt ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <p>
+                My name is Aidian and I am a member of Team Troubleshoot. I was born in
+                Brisbane Queensland and moved down to Burnie Tasmania at a young age, after
+                year 12 I moved down to Launceston to further my career and study but ended
+                up getting a trainee IT position at the Department of Education. I am hoping
+                to acquire a permanent position before my Trainee role ends. I Completed
+                Year 12 and 2 Units at Utas University for my Batchelor’s of Information
+                Communications and Technology’s. I am currently studying through Open
+                University with RMIT to complete the rest of my Batchelor’s. I have
+                always had interest in IT technology’s which got me wanting to be a
+                part of the IT industry. My main area of interest is networking as
+                the idea of making systems communicate over large distances fascinates
+                me. I have had 5 months experience within an IT role and may years of
+                little troubleshooting jobs throughout the family. My hobbies include
+                Gaming, VR, building computers and watching online videos.
+              </p>
+            </div>
+
+            <div style="display: none;" id="team-profile_group-processes">
+              <h3>Group Processes</h3>
+              <p>
+                Team Troubleshoot worked well together as a group by setting our targets and
+                achieving our goals before every meeting. The meetings were conducted twice per week
+                at a time that was suitable and agreed upon for all members to attend. There were a
+                few minor things that we could have improved within the group, some of these
+                improvements relate to planning and organization. We will be taking what we have
+                learnt from assignment 2 and improving our processes for assignment 3. We have
+                already started our improvements by starting early, setting a plan from the beginning
+                and ensuring we are spreading the work.
+              </p>
+            </div>
+
+            <div style="display: none;" id="team-profile_career-plans">
+              <h3>Career Plans</h3>
+              <p>
+                TODO
+              </p>
+            </div>
+
+          </div>
         </div>
       </div>
-      <p>
-        I’m Bryce – 25 years old and have just begun studying IT in order to expand my skillset.
-        I’ve moved back and forth between Ballarat and Melbourne the last few years, and have finally settled down back in Ballarat where I was born.
-        I currently work for a small company building high-end custom PCs for both personal and commercial use.
-        My role is essentially assembling, testing and troubleshooting our products. I’ve always had a passion for the hardware side of computing,
-        and hoping to expand my knowledge into the software side of things.
-        When I’m not working or tinkering, I play in a few bands locally and have a passion for audio engineering and sound production;
-        I’m most often found in my sketchy home studio amongst a tangle of cables and gear.
-      </p>
 
-      <div class="row">
-        <div class="col">
-          <p class="font-weight-bold">
-            Geoffrey Boyle (Student Number: s3871416)
-          </p>
-        </div>
-        <div class="col text-right">
-          <a href="https://geoffboyle.github.io/Assignment1/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
-            Take me to Geoffrey's personal website
-            <i class="fas fa-external-link-alt ml-1"></i>
-          </a>
+      <!-- TOOLS SECTION -->
+      <div class="carousel-item">
+        <div id="tools" class="py-5 section-tools">
+          <div class="container">
+            <h2 class="mb-5">Tools</h2>
+
+            <h3>Meeting Links</h3>
+
+          </div>
         </div>
       </div>
-      <p>
-        My name is Geoffrey Boyle and I am currently studying the Bachelor of Information Technology at
-        RMIT University. I am a member of Team Troubleshoot for our assessment tasks. I am currently 43
-        years of age and was born in Brisbane, Australia. My current employer is Australia Post, for the
-        past 13 years as a Postal Delivery Officer. My interests and hobbies consist of travelling,
-        playing rugby league, watching movies, fishing, and working with computers.
-        My interest in IT started back at high school, there are many different areas that I enjoy.
-        For that reason, the current field that I would like to pursue is still currently undecided.
-        Ideally to become multi-skilled with Networking, Web Development, and some Programming would be
-        my dream. With the variety of subjects on offer from RMIT University, it will expand my knowledge
-        and through study, I will find the career pathway that I will pursue in the future. My current
-        experience in IT relates to building computers, upgrading, diagnosing problems and repairs.
-        After completing high school in 1995, I had continued further study in Web Development, however
-        I need to retrain my skills in this field.
-      </p>
 
-      <div class="row">
-        <div class="col">
-          <p class="font-weight-bold">
-            Mitchell Cash (Student Number: s3740076)
-          </p>
-        </div>
-        <div class="col text-right">
-          <a href="https://mitchellcash-rmit.github.io/my-profile/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
-            Take me to Mitchell's personal website
-            <i class="fas fa-external-link-alt ml-1"></i>
-          </a>
+      <!-- PROJECT PLAN SECTION -->
+      <div class="carousel-item">
+        <div id="project-plan" class="py-5 section-project-plan">
+          <div class="container">
+            <h2 class="mb-5">Project Plan/Description</h2>
+            <h3>Overview</h3>
+            <p>
+
+            </p>
+            <h3>Aims</h3>
+            <p>
+              Team Troubleshoot’s aim is to create a prototype of a User-friendly app
+              to record and keep track of assets. This app will be aimed at the home
+              user to keep track of assets for insurance and tax claim purposes.
+              Our app needs to have a clean modern design, functionality that is easy
+              to follow for all users, Safe and secure data storage, Photo Scanning
+              technology and a promotional video to show off all the features.
+            </p>
+            <p>
+              The Justification for this application is that there is a very small range
+              of home inventory applications that give the freedom to store what you
+              want and need. Our app will allow the user to add their own fields, Scan
+              in photos, receipts, products from the internet. Our app will make sure
+              the most information is recorded and available for the user as soon as
+              they need it. All this information will improve tax returns and keep
+              insurance claims delay free.
+            </p>
+            <p>
+              To achieve this larger goal, we will need to complete smaller tasks within
+              the application, first goal would be to complete research of android app
+              development and the possibility of using MIT Inventor to create the prototype.
+              Research is essential when starting something new so looking at the skills
+              we have and the tools we can use will be vital to starting this project.
+              As we all have different coding knowledge, we think that using MIT Inventor
+              to create the prototype would be a beneficial call as block-based coding
+              is easier and faster to research and learn.
+            </p>
+            <p>
+              The most important goal is to create the back end or functionality of the
+              application. This backend will handle all the user interactions, Passing Data,
+              displaying the visuals correctly and allowing for the user to access and interact
+              with the application. By completing the functionality of the application early
+              on it allows for further testing, risk assessment and designing to take place
+              all greatly impacting the quality, efficiency and usability of the application.
+            </p>
+            <p>
+              Data storage and security is a great concern for our team, one of our essential goals
+              are to ensure all data is stored appropriately and secure. Storing data securely is
+              extremely important to protect our data we record for the user. This data has sensitive
+              financial information which should not be seen by unauthorised personnel, with storing
+              this data in the cloud it brings both opportunity for security as well as risk that we
+              will need to discover.
+            </p>
+            <p>
+              Team Troubleshoots app needs to have a clean, modern, and function design not only functionally
+              but visually. We need to create high quality visual elements and style for our app. This
+              design will ensure the app is professional, easy to understand, visually appealing and easy
+              to use.
+            </p>
+            <p>
+              The scanning feature is a unique feature that will separate our app from the competitors,
+              this feature will allow you to scan in receipts to import information and allow the user
+              to take a picture of the product and the app will find as much more relevant information
+              using the name, image recognition and any other information given. This allows you to add
+              more information about your asset without having to do research or investigating. This feature
+              gives the user more of a premium experience making the asset recording process easier.
+            </p>
+            <p>
+              Creating a promotional video will help to bring awareness of the project. This promotional
+              video is aimed to get home users to download the app and try the service we are providing.
+              This promotional video needs to be professional, short sharp and straight to the point to keep
+              the audience's attention. We will include subjects like the description of the app, security and statistics.
+            </p>
+
+            <h3>Plans and Progress</h3>
+            <p>
+              <!-- Geoff to complete -->
+            </p>
+            <h3>Roles</h3>
+            <p>
+
+            </p>
+            <h3>Scope and Limits</h3>
+            <p>
+
+            </p>
+            <h3>Tools and Technologies</h3>
+            <p>
+              The Troubleshooter app and project makes use of a range of different tools and technologies
+              to create the final production, as well as the marketing video. When we conducted our
+              initial review into building Troubleshooter we went around the team to understand what
+              background we had in app development, whether that be web, iOS, Android or other. While
+              there was some basic knowledge of iOS development from Mitchell and Android (Java)
+              development from Aidian it wasn’t our speciality. Web development was our strongest skill
+              with all members being able to get involved in some way shape or form, but Troubleshooter
+              was designed to be an app you can run from your phone because portability and the use of
+              the camera are some of the foundations of the feature set. This led us to further explore
+              options and we came upon a tool called MIT App Inventor.
+            </p>
+            <div class="row">
+              <div class="col-8">
+                <p>
+                  MIT App Inventor is a web app that provides an easy to use interface to get up and running
+                  with a phone application very quickly and without a deep understanding of all the iOS and
+                  Android frameworks. MIT App Inventor has been used to create apps such as COVID-19 data
+                  tracker, bipolar management and scheduling app and apps to help manage share houses. As
+                  none of the team had experience with this tool, we made some example “dummy apps” and
+                  quickly realised it would meet the requirements for our first version and prototype of the
+                  Troubleshooter smart phone application.
+                </p>
+                <p>
+                  As MIT App Inventor would cover off everything we needed to build the app (including camera
+                  and data storage support), we could focus on what we needed to create the marketing video
+                  for the Troubleshooter app. After another check of the team’s background in storyboarding
+                  and video editing, we had enough knowledge to get us across the line without too much
+                  additional learning. We again reviewed the tools and technologies that are available to us
+                  and had to cross of a handful of them due to the price tag (e.g. Adobe Premiere). We
+                  decided that we would use iMovie (free) for our video editing app and Microsoft PowerPoint
+                  as our app for the storyboard. The whole team had experience with PowerPoint and once we
+                  set out the storyboard template, we could all get involved and Aidian and Mitchell both had
+                  a small background in basic video editing (albeit with Adobe Premiere) and offered to
+                  assist with any of the video editing.
+                </p>
+              </div>
+              <div class="col-4">
+                <figure class="figure">
+                  <img src="assets/img/mit-app-inventor.png" class="figure-img img-fluid rounded" alt="MIT App Inventor">
+                  <figcaption class="figure-caption text-center">MIT App Inventor.</figcaption>
+                </figure>
+              </div>
+            </div>
+            <p>
+              Outside of the direct technologies required for the Troubleshooter app itself the team
+              always relies heavily on the Microsoft Office suite of products and use Microsoft Teams as
+              our communication platform as well as Microsoft Word and Notes to consolidate our ideas and
+              report writing.
+            </p>
+
+            <h3>Testing</h3>
+            <p>
+              An important part of designing the application is the testing phase, a plan needs to be put in place to
+              ensure everything is working throughout the application. There are many areas that need to be considered
+              when testing the design of our new application “Troubleshooter”. The following areas are User Interface
+              testing, Functional Testing, Database Testing, Load Testing, Performance, Security Testing, etc.
+            </p>
+            <p>
+              User Interface testing is required to ensure that the interface will meet user expectations.
+              The following areas need to be tested throughout the process.
+            </p>
+            <img src="assets/img/test.jpg" align="right" style="width:300px;height:250px;padding-left:20px;"/>
+            <ul>
+              <li>Check Screen Validations</li>
+              <li>Verify All Navigations</li>
+              <li>Check usability Conditions</li>
+              <li>Verify Data Integrity</li>
+              <li>Verify the object states</li>
+              <li>Verify the date Field and Numeric Field Formats</li>
+              <li>Verify the compatibility of the User Interface on various platforms (IOS, Android)</li>
+            </ul>
+            <p>
+              Functional testing is also required to test each function of Troubleshooter’s software application, by
+              providing appropriate input and verifying the output against the Functional requirements. The following
+              areas need to be addressed in this testing phase.
+            <ul>
+              <li>Understand the Functional Requirements</li>
+              <li>Identify test input or test data based on requirements</li>
+              <li>Compute the expected outcomes with selected test input values</li>
+              <li>Execute test cases</li>
+              <li>Compare actual and computed expected results</li>
+            </ul>
+            </p>
+            <p>
+              Database testing was also required. This involves performing data validity, data integrity testing,
+              performance check related to database and testing of procedures, triggers, and functions in the database.
+              From database testing point of view, the following checks should be performed −
+            <ul>
+              <li>The transactional information from the application should be stored in the database and it should
+                provide correct information to the user.</li>
+              <li>Information should not be lost when it is loaded to database.</li>
+              <li>Only completed transactions should be stored and all incomplete operations should be aborted by the
+                application.</li>
+              </li>Access authorization to database should be maintained. No unapproved or unauthorized access to
+              user information should be provided.</li>
+            </ul>
+            </p>
+            <p>
+              Load testing one among the different kinds of performance testing, this is required to determine the
+              performance of the application in real time load conditions. It is basically used to ensure that the
+              application performs satisfactorily when many users try to access or use it at the same time. This
+              can be performed by -
+            <ul>
+              <li>Running multiple applications on a computer or server simultaneously</li>
+              <li>Subjecting a server to a large amount of traffic</li>
+              <li>Writing and reading data to and from a hard disk continuously</li>
+            </ul>
+            </p>
+            <p>
+              Performance Testing was used for testing the speed, response time, stability, reliability, scalability,
+              and resource usage of a software application under a particular workload.
+              The focus of Performance Testing was to ensure the application’s
+            <ul>
+              <li>Speed - Determines whether the application responds quickly</li>
+              <li>Scalability - Determines maximum user load the software application can handle.</li>
+              <li>Stability - Determines if the application is stable under varying loads</li>
+            </ul>
+            </p>
+            <p>
+              Security testing is another important aspect of the application.
+              There are four focus areas to be considered in security testing of the application.<br>
+              Network security: This involves looking for vulnerabilities in the network infrastructure (resources and
+              policies).<br>
+              System software security: This involves assessing weaknesses in the various software (operating system,
+              database system, and other software) the application depends on.<br>
+              Client-side application security: This deals with ensuring that the client (browser or any such tool)
+              cannot be manipulated.<br>
+              Server-side application security: This involves making sure that the server code and its technologies are
+              robust enough to fend off any intrusion.
+            </p>
+            <p>
+              To summarise the testing phase, there are many areas that need to be covered to optimize the performance
+              of the application. Ideally 6 test users with skills in the specific areas above would be required to
+              focus on each area of the testing phase, however less test users would be required depending on their
+              skillset. All hardware devices need to be tested such as photo scanning technology devices, storage,
+              computer, and hand-held devices to be compatible with the software used for the application across
+              multiple platforms.
+            </p>
+            <h3>Timeframe</h3>
+            <p>
+
+            </p>
+            <h3>Risks</h3>
+            <p>
+              Our team's "Troubleshoot" app faces a number of risks that will present themselves both during
+              development and well into our hypothetical launch. Outside of the generic risks associated with
+              any I.T. project, developing and Android app has its own unique set of risks.
+            </p>
+            <p>
+              Specific to our own group, and the nature of this assignment, inexperience is a very real risk to
+              our project: having never developed an Android app before, there is the risk that we may not be
+              able to learn, understand and implement advanced techniques (such as OCR) in a reasonable timeframe.
+              Inexperience is a unique risk to our project in that the only way to overcome it is to either spend
+              increasing amounts of time in order to become experienced, or to add a member to the team that
+              possesses the relevant experience, much like a company would.
+            </p>
+            <p>
+              Another risk is that of being tied to one particular platform. Being an Android app, how many
+              potential users are we missing out on? The need to translate the app to accomodate the iOS platform
+              down the line may exist, in order to deliver a comprehensive product.
+            </p>
+            <p>
+              Tying into the previous risk, there is the possibility of the application being denied by the
+              relevant app store. App store/marketplace rules are always subject to change, and there is no
+              guarantee that even a successful implementation of the "Troubleshoot" app will be approved for
+              sale.
+            </p>
+            <p>
+              There is also always the risk that the "Troubleshoot" app won't meet the end users' needs. The
+              app may not have the desired features implemented in the way our intended users really need.
+              Conversely, our app could potentially have <b>too many</b> features, leaving the end user with
+              difficulty in getting what they need from out app. Our solution will need to be user-friendly
+              and concise in what it has to offer, with a well-tailored UI that communicates a wealth of
+              features in a simple manner.
+            </p>
+            <h3>Group Processes and Communication</h3>
+            <p>
+              <img src="assets/img/group.jpg" align="right" style="width:400px;height:300px;padding-left:20px;"/>
+              The members in our team communicate by having meetings twice per week and sending messages through chat
+              using MS Teams. Every meeting, the group discuss the tasks that need to be complete and set goals to have
+              some of these completed by the next meeting.
+            </p>
+            <p>
+              We also discuss the current progress of our assignment, ideas for our website and how to achieve the
+              results required for our project idea. In the meeting agenda notes, we have a progress and things to do
+              list. This list allows each of the team members to view our current progress, tasks that each team member
+              are currently working on, and tasks that are still outstanding.
+            </p>
+            <p>
+              If a team member is not present at the meeting, a message is sent through chat on MS Teams, to advise what
+              was discussed at the meeting and tasks that are required to be complete. The team member absent is then
+              required to select an incomplete task from the list. If a group member fails to respond, the rest of team
+              work together to take on the additional tasks that have not been completed.
+            </p>
+
+          </div>
         </div>
       </div>
-      <p>
-        My name is Mitchell and I am a member of Team Troubleshoot. I am studying a Bachelor of
-        Information Technology at RMIT University and have a strong passion for technology and
-        software development. I grew up in Queensland, Australia and began my degree there while I
-        was working as a Business Analyst at a technology company in Brisbane City. Since then I have
-        moved to Scotland, UK and studying remotely from there while also working as a software
-        engineer. I have been working as a software developer for 1-2 years now and predominately am
-        focused on frontend development using Vue.js, but also work on some backend systems in PHP.
-        Currently some of my favourite tech I am playing with is Vue.js (with a close eye on the
-        upcoming v3 release), DevOps CI/CD, serverless development and containerization (Docker and
-        Kubernetes). If I am not playing around with tech I play (well played thanks to the pandemic)
-        a lot of social sport, including AFL, touch football and indoor soccer.
-      </p>
 
-      <div class="row">
-        <div class="col">
-          <p class="font-weight-bold">
-            Samuel Fairbrother (Student Number: S3813419)
-          </p>
-        </div>
-        <div class="col text-right">
-          <a href="https://fairbrsa.github.io/my-profile/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
-            Take me to Samuel's personal website
-            <i class="fas fa-external-link-alt ml-1"></i>
-          </a>
+      <!-- SKILLS AND JOBS SECTION -->
+      <div class="carousel-item">
+        <div id="skills-jobs" class="py-5 section-skills-jobs">
+          <div class="container">
+            <h2 class="mb-5">Skills and Jobs</h2>
+
+            <h3>Software Engineer</h3>
+            <p>
+              Troubleshooter’s engineering and product development centre are looking for a passionate application
+              developer for one of our newest projects. Our Software Engineer will work as part of a technical team
+              responsible for the design, development, testing and integration of new communications, software,
+              infrastructure and applications, including the development of Android and IOS apps, to meet product and
+              business requirements.
+            </p>
+            <p>
+              We are looking for someone with the following experience, knowledge and skills:
+
+            <ul>
+              <li>Degree qualifications in Computer Science or Information Technology</li>
+              <li>Proficiency in Android development (Java or Kotlin) and IOS app development</li>
+              <li>Experience using the .NET Framework, including Python coding, AWS Lambda, C#, ASP. & WPF</li>
+              <li>Knowledge of SQL and Database Design</li>
+              <li>Sound time management</li>
+              <li>Exposure to project management methodology and tools</li>
+              <li>Initiative and self-supervision</li>
+              <li>Calmness, courtesy and patience under pressure</li>
+              <li>Problem-solving skills – to deal with the various challenges that can arise</li>
+              <li>Attention to detail – focusing on quality over quantity</li>
+              <li>Good written communication skills including an understanding of email etiquette.</li>
+            </ul>
+            </p>
+            <p>
+              Your Troubleshooter benefits include:
+            <ul>
+              <li>An opportunity to be part of an industry leading tech company</li>
+              <li>Competitive salary package including bonus</li>
+              <li>REAL flexible working options including hours and location</li>
+              <li>Paid learning and development opportunities</li>
+            </ul>
+            </p>
+            <p>
+              Sounds like a job you were born to do? We want to hear from you and can't wait to receive your application!
+            </p>
+
+            <h3>Project Manager</h3>
+            <p>
+              Troubleshooter’s Project manager need to be a passionate leader looking for a new, innovative project
+              to lead. Our Project Manager will lead our software, design and marketing team to ensure quality,
+              communication and transparency between the team. The Project Manager will oversee regular communications,
+              learning for team members, Quality assurance, Team Meetings, meeting goals and to take responsibility
+              for the team and the product.
+            </p>
+            <p class="font-weight-bold">
+              Your profile:
+            </p>
+            <ul>
+              <li>Enthusiastic</li>
+              <li>A self-starter</li>
+              <li>Willing to learn</li>
+              <li>Excellent Communication Skills</li>
+              <li>Team Leader</li>
+            </ul>
+            <p class="font-weight-bold">
+              Technical Skills:
+            </p>
+            <ul>
+              <li>Degree qualifications in Computer Science or Information Technology</li>
+              <li>3 Years' Experience within a Management role</li>
+              <li>Knowledge in Android development</li>
+              <li>Good written communication skills including an understanding of email etiquette.</li>
+              <li>Innovative thinking and Problem-solving skills</li>
+            </ul>
+            <p class="font-weight-bold">
+              Your Troubleshooter benefits include:
+            </p>
+            <ul>
+              <li>An opportunity to be part of an industry leading tech company</li>
+              <li>Competitive salary package including bonus</li>
+              <li>REAL flexible working options including hours and location</li>
+              <li>Paid learning and development opportunities</li>
+            </ul>
+
+            <h3>Designer</h3>
+            <p>
+              <!-- Emre to complete -->
+            </p>
+
+            <h3>Senior Marketing/Sales Hybrid Role</h3>
+            <p>
+              We are seeking a senior marketing and sales director to lead and define Troubleshooter’s go
+              to market strategy.
+            </p>
+            <p>
+              The type of person we are looking for is someone with lots of enthusiasm and very
+              autonomous as you will be joining a small team and will be required to define how and where
+              Troubleshooter fits in the market and the message we send out to customers. On top of the
+              marketing strategy any new inbound leads are to be assessed and actioned. We are a small
+              team at the moment but would envision you leading and hiring for the future marketing/sales
+              team as we grow. We look forward to receiving your application!
+            </p>
+            <p class="font-weight-bold">
+              Your profile:
+            </p>
+            <ul>
+              <li>Enthusiastic</li>
+              <li>A self-starter</li>
+              <li>Open to new ideas and willing to pivot on short notice</li>
+            </ul>
+            <p class="font-weight-bold">
+              Technical skills:
+            </p>
+            <ul>
+              <li>Over 5 years in a marketing type role</li>
+              <li>Experience with the sales process</li>
+              <li>Preferably managed people before</li>
+              <li>Excellent written communications</li>
+            </ul>
+            <p>
+              For the right candidate Troubleshooter offers a competitive salary, monthly team outings
+              and annual learning and development budgets.
+            </p>
+          </div>
         </div>
       </div>
-      <p>
-        My name is Sam Fairbrother and I am apart of Team Troubleshoot. I am currently living in Canberra
-        where I work as a chef in an Italian restaurant. I moved from my hometown of Newcastle in 2018 as
-        I was enrolled to study computer science at the ANU. I later had to withdraw from this course as
-        I had some health problems that required me to return home for a while. However, I have stayed in
-        Canberra as my fiancé has work obligations here. I am studying the Bachelor of IT through OUA as
-        I still have a great passion for IT and aim to start a career in the IT field. My main areas of
-        interest are business information systems and cyber security. My interests and hobbies include
-        cooking, rugby, gaming, and spending time by the beach. My interest in IT started when I began
-        playing video games when I was younger, this introduced me to the world of IT and eventually my
-        intrigue led me to learning more about different aspects of IT. Regarding my experience in IT, I
-        have always been the nominated IT-problem-solver of the household, whether it be fixing a computer,
-        the internet, printers etc, so I have had a lot of exposure to little things like this that then
-        require me to further research to solve the problem. One of the things that I love about IT is the
-        ability to solve a problem just through self-research online, and the great feeling that you get when
-        you are able to fix something.
-      </p>
 
-      <div class="row">
-        <div class="col">
-          <p class="font-weight-bold">
-            Emre Sezgin (Student Number: S3875131)
-          </p>
-        </div>
-        <div class="col text-right">
-          <a href="https://s3875131.github.io/My-Profile/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
-            Take me to Emre's personal website
-            <i class="fas fa-external-link-alt ml-1"></i>
-          </a>
+      <!-- GROUP REFLECTION SECTION -->
+      <div class="carousel-item">
+        <div id="group-reflection" class="py-5 section-group-reflection">
+          <div class="container">
+            <h2 class="mb-5">Group Reflection</h2>
+          </div>
         </div>
       </div>
-      <p>
-        My name is Emre Sezgin and i am a member of team troubleshoot. I was born in Melbourne,
-        Victoria and now i reside in Brisbane, Queensland. I am undertaking a bachelor of IT
-        and my most up to date education is high school. Even thought I grew up in Melbourne my
-        nationality is Turkish/Australian, which means I also know Turkish as well and a little
-        bit of Arabic. I work in Aviation as a ground operations officer at Brisbane Airport (BNE).
-        An interesting fact about me is that even though I love Holdens very much and own one myself,
-        I was very close †o buying a Ford and ruining my loyalty to Holden, sadly I am also
-        devastated that the great lion will not be with us any longer.
-
-        Some hobbies of mine are Tennis, video games, TV shows but mostly working on my car.
-        Fixing it myself and learning new stuff while at it. The most recent modification I
-        have done to it was installing a remote start module which allows it to remotly start with the
-        key, while pressing the lock button 3 times without the key even being inside the car.
-      </p>
-
-      <div class="row">
-        <div class="col">
-          <p class="font-weight-bold">
-            Aidian Withers (Student Number: s3874333)
-          </p>
-        </div>
-        <div class="col text-right">
-          <a href="https://aidian2654.github.io/Assignment-1/" target="_blank" class="badge badge-pill badge-warning py-2 px-3">
-            Take me to Aidian's personal website
-            <i class="fas fa-external-link-alt ml-1"></i>
-          </a>
-        </div>
-      </div>
-      <p>
-        My name is Aidian and I am a member of Team Troubleshoot. I was born in
-        Brisbane Queensland and moved down to Burnie Tasmania at a young age, after
-        year 12 I moved down to Launceston to further my career and study but ended
-        up getting a trainee IT position at the Department of Education. I am hoping
-        to acquire a permanent position before my Trainee role ends. I Completed
-        Year 12 and 2 Units at Utas University for my Batchelor’s of Information
-        Communications and Technology’s. I am currently studying through Open
-        University with RMIT to complete the rest of my Batchelor’s. I have
-        always had interest in IT technology’s which got me wanting to be a
-        part of the IT industry. My main area of interest is networking as
-        the idea of making systems communicate over large distances fascinates
-        me. I have had 5 months experience within an IT role and may years of
-        little troubleshooting jobs throughout the family. My hobbies include
-        Gaming, VR, building computers and watching online videos.
-      </p>
-
-      <h3>Group Processes</h3>
-      
-
-      <h3>Career Plans</h3>
-
     </div>
-  </div>
-
-  <!-- TOOLS SECTION -->
-  <div id="tools" class="py-5 section-tools">
-    <div class="container">
-      <h2 class="mb-5">Tools</h2>
-
-      <h3>Meeting Links</h3>
-
-    </div>
-  </div>
-
-  <!-- PROJECT PLAN SECTION -->
-  <div id="project-plan" class="py-5 section-project-plan">
-    <div class="container">
-      <h2 class="mb-5">Project Plan/Description</h2>
-      <h3>Overview</h3>
-      <p>
-
-      </p>
-      <h3>Aims</h3>
-      <p>
-        Team Troubleshoot’s aim is to create a prototype of a User-friendly app
-        to record and keep track of assets. This app will be aimed at the home
-        user to keep track of assets for insurance and tax claim purposes.
-        Our app needs to have a clean modern design, functionality that is easy
-        to follow for all users, Safe and secure data storage, Photo Scanning
-        technology and a promotional video to show off all the features. 
-      </p>
-      <p>
-        The Justification for this application is that there is a very small range
-        of home inventory applications that give the freedom to store what you
-        want and need. Our app will allow the user to add their own fields, Scan
-        in photos, receipts, products from the internet. Our app will make sure
-        the most information is recorded and available for the user as soon as
-        they need it. All this information will improve tax returns and keep 
-        insurance claims delay free. 
-      </p>
-      <p>
-        To achieve this larger goal, we will need to complete smaller tasks within
-        the application, first goal would be to complete research of android app
-        development and the possibility of using MIT Inventor to create the prototype.
-        Research is essential when starting something new so looking at the skills
-        we have and the tools we can use will be vital to starting this project.
-        As we all have different coding knowledge, we think that using MIT Inventor
-        to create the prototype would be a beneficial call as block-based coding 
-        is easier and faster to research and learn. 
-      </p>
-      <p>
-        The most important goal is to create the back end or functionality of the
-        application. This backend will handle all the user interactions, Passing Data,
-        displaying the visuals correctly and allowing for the user to access and interact
-        with the application. By completing the functionality of the application early
-        on it allows for further testing, risk assessment and designing to take place
-        all greatly impacting the quality, efficiency and usability of the application. 
-      </p>
-      <p>
-        Data storage and security is a great concern for our team, one of our essential goals
-        are to ensure all data is stored appropriately and secure. Storing data securely is
-        extremely important to protect our data we record for the user. This data has sensitive
-        financial information which should not be seen by unauthorised personnel, with storing
-        this data in the cloud it brings both opportunity for security as well as risk that we
-        will need to discover. 
-      </p>
-      <p>
-        Team Troubleshoots app needs to have a clean, modern, and function design not only functionally
-        but visually. We need to create high quality visual elements and style for our app. This
-        design will ensure the app is professional, easy to understand, visually appealing and easy
-        to use. 
-      </p>
-      <p>
-        The scanning feature is a unique feature that will separate our app from the competitors, 
-        this feature will allow you to scan in receipts to import information and allow the user 
-        to take a picture of the product and the app will find as much more relevant information 
-        using the name, image recognition and any other information given. This allows you to add 
-        more information about your asset without having to do research or investigating. This feature 
-        gives the user more of a premium experience making the asset recording process easier. 
-      </p>
-      <p>
-        Creating a promotional video will help to bring awareness of the project. This promotional
-        video is aimed to get home users to download the app and try the service we are providing. 
-        This promotional video needs to be professional, short sharp and straight to the point to keep
-        the audience's attention. We will include subjects like the description of the app, security and statistics. 
-      </p> 
-      
-      <h3>Plans and Progress</h3>
-      <p>
-        <!-- Geoff to complete -->
-      </p>
-      <h3>Roles</h3>
-      <p>
-
-      </p>
-      <h3>Scope and Limits</h3>
-      <p>
-
-      </p>
-      <h3>Tools and Technologies</h3>
-      <p>
-        The Troubleshooter app and project makes use of a range of different tools and technologies
-        to create the final production, as well as the marketing video. When we conducted our
-        initial review into building Troubleshooter we went around the team to understand what
-        background we had in app development, whether that be web, iOS, Android or other. While
-        there was some basic knowledge of iOS development from Mitchell and Android (Java)
-        development from Aidian it wasn’t our speciality. Web development was our strongest skill
-        with all members being able to get involved in some way shape or form, but Troubleshooter
-        was designed to be an app you can run from your phone because portability and the use of
-        the camera are some of the foundations of the feature set. This led us to further explore
-        options and we came upon a tool called MIT App Inventor.
-      </p>
-      <div class="row">
-        <div class="col-8">
-          <p>
-            MIT App Inventor is a web app that provides an easy to use interface to get up and running
-            with a phone application very quickly and without a deep understanding of all the iOS and
-            Android frameworks. MIT App Inventor has been used to create apps such as COVID-19 data
-            tracker, bipolar management and scheduling app and apps to help manage share houses. As
-            none of the team had experience with this tool, we made some example “dummy apps” and
-            quickly realised it would meet the requirements for our first version and prototype of the
-            Troubleshooter smart phone application.
-          </p>
-          <p>
-            As MIT App Inventor would cover off everything we needed to build the app (including camera
-            and data storage support), we could focus on what we needed to create the marketing video
-            for the Troubleshooter app. After another check of the team’s background in storyboarding
-            and video editing, we had enough knowledge to get us across the line without too much
-            additional learning. We again reviewed the tools and technologies that are available to us
-            and had to cross of a handful of them due to the price tag (e.g. Adobe Premiere). We
-            decided that we would use iMovie (free) for our video editing app and Microsoft PowerPoint
-            as our app for the storyboard. The whole team had experience with PowerPoint and once we
-            set out the storyboard template, we could all get involved and Aidian and Mitchell both had
-            a small background in basic video editing (albeit with Adobe Premiere) and offered to
-            assist with any of the video editing.
-          </p>
-        </div>
-        <div class="col-4">
-          <figure class="figure">
-            <img src="assets/img/mit-app-inventor.png" class="figure-img img-fluid rounded" alt="MIT App Inventor">
-            <figcaption class="figure-caption text-center">MIT App Inventor.</figcaption>
-          </figure>
-        </div>
-      </div>
-      <p>
-        Outside of the direct technologies required for the Troubleshooter app itself the team
-        always relies heavily on the Microsoft Office suite of products and use Microsoft Teams as
-        our communication platform as well as Microsoft Word and Notes to consolidate our ideas and
-        report writing.
-      </p>
-
-      <h3>Testing</h3>
-      <p> 
-        An important part of designing the application is the testing phase, a plan needs to be put in place to
-        ensure everything is working throughout the application. There are many areas that need to be considered
-        when testing the design of our new application “Troubleshooter”. The following areas are User Interface
-        testing, Functional Testing, Database Testing, Load Testing, Performance, Security Testing, etc.
-      </p>
-      <p>
-        User Interface testing is required to ensure that the interface will meet user expectations.
-        The following areas need to be tested throughout the process.
-      </p>
-      <p>
-        <img src="assets/img/test.jpg" align="right" style="width:300px;height:250px;padding-left:20px;"/>
-        <ul>
-          <li>Check Screen Validations</li>
-          <li>Verify All Navigations</li>
-          <li>Check usability Conditions</li>
-          <li>Verify Data Integrity</li>
-          <li>Verify the object states</li>
-          <li>Verify the date Field and Numeric Field Formats</li>
-          <li>Verify the compatibility of the User Interface on various platforms (IOS, Android)</li>
-        </ul>
-      </p>
-      <p>
-        Functional testing is also required to test each function of Troubleshooter’s software application, by
-        providing appropriate input and verifying the output against the Functional requirements. The following
-        areas need to be addressed in this testing phase.
-        <ul>
-          <li>Understand the Functional Requirements</li>
-          <li>Identify test input or test data based on requirements</li>
-          <li>Compute the expected outcomes with selected test input values</li>
-          <li>Execute test cases</li>
-          <li>Compare actual and computed expected results</li>
-        </ul>
-      </p>
-      <p>
-        Database testing was also required. This involves performing data validity, data integrity testing,
-        performance check related to database and testing of procedures, triggers, and functions in the database.
-        From database testing point of view, the following checks should be performed −
-        <ul>
-          <li>The transactional information from the application should be stored in the database and it should
-            provide correct information to the user.</li>
-          <li>Information should not be lost when it is loaded to database.</li>
-          <li>Only completed transactions should be stored and all incomplete operations should be aborted by the
-            application.</li>
-          </li>Access authorization to database should be maintained. No unapproved or unauthorized access to
-            user information should be provided.</li>
-        </ul>
-      </p>
-      <p>
-        Load testing one among the different kinds of performance testing, this is required to determine the
-        performance of the application in real time load conditions. It is basically used to ensure that the
-        application performs satisfactorily when many users try to access or use it at the same time. This
-        can be performed by -
-        <ul>
-          <li>Running multiple applications on a computer or server simultaneously</li>
-          <li>Subjecting a server to a large amount of traffic</li>
-          <li>Writing and reading data to and from a hard disk continuously</li>
-        </ul>
-     </p>
-     <p>
-      Performance Testing was used for testing the speed, response time, stability, reliability, scalability,
-       and resource usage of a software application under a particular workload.
-       The focus of Performance Testing was to ensure the application’s
-      <ul>
-        <li>Speed - Determines whether the application responds quickly</li>
-        <li>Scalability - Determines maximum user load the software application can handle.</li>
-        <li>Stability - Determines if the application is stable under varying loads</li>
-      </ul>
-     </p>
-     <p>
-      Security testing is another important aspect of the application.
-      There are four focus areas to be considered in security testing of the application.<br>
-      Network security: This involves looking for vulnerabilities in the network infrastructure (resources and
-       policies).<br>
-      System software security: This involves assessing weaknesses in the various software (operating system,
-       database system, and other software) the application depends on.<br>
-      Client-side application security: This deals with ensuring that the client (browser or any such tool)
-       cannot be manipulated.<br>
-      Server-side application security: This involves making sure that the server code and its technologies are
-       robust enough to fend off any intrusion.
-    </p>
-    <p>
-      To summarise the testing phase, there are many areas that need to be covered to optimize the performance
-       of the application. Ideally 6 test users with skills in the specific areas above would be required to
-       focus on each area of the testing phase, however less test users would be required depending on their
-       skillset. All hardware devices need to be tested such as photo scanning technology devices, storage,
-       computer, and hand-held devices to be compatible with the software used for the application across
-       multiple platforms.
-    </p>
-    <h3>Timeframe</h3>
-    <p>
-
-    </p>
-    <h3>Risks</h3>
-    <p>
-      Our team's "Troubleshoot" app faces a number of risks that will present themselves both during
-      development and well into our hypothetical launch. Outside of the generic risks associated with
-      any I.T. project, developing and Android app has its own unique set of risks.
-      </p>
-    <p>
-      Specific to our own group, and the nature of this assignment, inexperience is a very real risk to
-      our project: having never developed an Android app before, there is the risk that we may not be
-      able to learn, understand and implement advanced techniques (such as OCR) in a reasonable timeframe.
-      Inexperience is a unique risk to our project in that the only way to overcome it is to either spend
-      increasing amounts of time in order to become experienced, or to add a member to the team that 
-      possesses the relevant experience, much like a company would.
-      </p>
-    <p>
-      Another risk is that of being tied to one particular platform. Being an Android app, how many
-      potential users are we missing out on? The need to translate the app to accomodate the iOS platform
-      down the line may exist, in order to deliver a comprehensive product.
-      </p>
-    <p>
-      Tying into the previous risk, there is the possibility of the application being denied by the
-      relevant app store. App store/marketplace rules are always subject to change, and there is no
-      guarantee that even a successful implementation of the "Troubleshoot" app will be approved for
-      sale.
-      </p>
-    <p>
-      There is also always the risk that the "Troubleshoot" app won't meet the end users' needs. The 
-      app may not have the desired features implemented in the way our intended users really need.
-      Conversely, our app could potentially have <b>too many</b> features, leaving the end user with 
-      difficulty in getting what they need from out app. Our solution will need to be user-friendly
-      and concise in what it has to offer, with a well-tailored UI that communicates a wealth of
-      features in a simple manner.
-</p>
-    <h3>Group Processes and Communication</h3>
-    <p>
-      <img src="assets/img/group.jpg" align="right" style="width:400px;height:300px;padding-left:20px;"/>
-      The members in our team communicate by having meetings twice per week and sending messages through chat 
-      using MS Teams. Every meeting, the group discuss the tasks that need to be complete and set goals to have 
-      some of these completed by the next meeting.
-      </p>
-      <p>
-      We also discuss the current progress of our assignment, ideas for our website and how to achieve the 
-      results required for our project idea. In the meeting agenda notes, we have a progress and things to do
-      list. This list allows each of the team members to view our current progress, tasks that each team member 
-      are currently working on, and tasks that are still outstanding.
-      </p>
-      <p>
-      If a team member is not present at the meeting, a message is sent through chat on MS Teams, to advise what
-      was discussed at the meeting and tasks that are required to be complete. The team member absent is then 
-      required to select an incomplete task from the list. If a group member fails to respond, the rest of team 
-      work together to take on the additional tasks that have not been completed.
-      </p>
-
-    </div>
-  </div>
-
-  <!-- SKILLS AND JOBS SECTION -->
-  <div id="skills-jobs" class="py-5 section-skills-jobs">
-    <div class="container">
-      <h2 class="mb-5">Skills and Jobs</h2>
-
-      <h3>Software Engineer</h3>
-      <p>
-        Troubleshooter’s engineering and product development centre are looking for a passionate application
-        developer for one of our newest projects. Our Software Engineer will work as part of a technical team
-        responsible for the design, development, testing and integration of new communications, software,
-        infrastructure and applications, including the development of Android and IOS apps, to meet product and
-        business requirements.
-      </p>
-      <p>
-        We are looking for someone with the following experience, knowledge and skills:
-
-      <ul>
-        <li>Degree qualifications in Computer Science or Information Technology</li>
-        <li>Proficiency in Android development (Java or Kotlin) and IOS app development</li>
-        <li>Experience using the .NET Framework, including Python coding, AWS Lambda, C#, ASP. & WPF</li>
-        <li>Knowledge of SQL and Database Design</li>
-        <li>Sound time management</li>
-        <li>Exposure to project management methodology and tools</li>
-        <li>Initiative and self-supervision</li>
-        <li>Calmness, courtesy and patience under pressure</li>
-        <li>Problem-solving skills – to deal with the various challenges that can arise</li>
-        <li>Attention to detail – focusing on quality over quantity</li>
-        <li>Good written communication skills including an understanding of email etiquette.</li>
-      </ul>
-    </p>
-    <p>
-    Your Troubleshooter benefits include:
-    <ul>
-      <li>An opportunity to be part of an industry leading tech company</li>
-      <li>Competitive salary package including bonus</li>
-      <li>REAL flexible working options including hours and location</li>
-      <li>Paid learning and development opportunities</li>
-   </ul>
-   </p>
-   <p>
-     Sounds like a job you were born to do? We want to hear from you and can't wait to receive your application!
-   </p>
-
-      <h3>Project Manager</h3>
-      <p>
-        Troubleshooter’s Project manager need to be a passionate leader looking for a new, innovative project
-        to lead. Our Project Manager will lead our software, design and marketing team to ensure quality, 
-        communication and transparency between the team. The Project Manager will oversee regular communications,
-        learning for team members, Quality assurance, Team Meetings, meeting goals and to take responsibility 
-        for the team and the product. 
-      </p>
-      <p class="font-weight-bold">
-        Your profile:
-      </p>
-      <ul>
-        <li>Enthusiastic</li>
-        <li>A self-starter</li>
-        <li>Willing to learn</li>
-        <li>Excellent Communication Skills</li>
-        <li>Team Leader</li>
-      </ul>
-      <p class="font-weight-bold">
-        Technical Skills:
-      </p>
-      <ul>
-        <li>Degree qualifications in Computer Science or Information Technology</li>
-        <li>3 Years' Experience within a Management role</li>
-        <li>Knowledge in Android development</li>
-        <li>Good written communication skills including an understanding of email etiquette.</li>
-        <li>Innovative thinking and Problem-solving skills</li>
-      </ul>
-      <p class="font-weight-bold">
-        Your Troubleshooter benefits include: 
-      </p>
-      <ul>
-        <li>An opportunity to be part of an industry leading tech company</li>
-        <li>Competitive salary package including bonus</li>
-        <li>REAL flexible working options including hours and location</li>
-        <li>Paid learning and development opportunities</li>
-      </ul>
-
-      <h3>Designer</h3>
-      <p>
-        <!-- Emre to complete -->
-      </p>
-
-      <h3>Senior Marketing/Sales Hybrid Role</h3>
-      <p>
-        We are seeking a senior marketing and sales director to lead and define Troubleshooter’s go
-        to market strategy.
-      </p>
-      <p>
-        The type of person we are looking for is someone with lots of enthusiasm and very
-        autonomous as you will be joining a small team and will be required to define how and where
-        Troubleshooter fits in the market and the message we send out to customers. On top of the
-        marketing strategy any new inbound leads are to be assessed and actioned. We are a small
-        team at the moment but would envision you leading and hiring for the future marketing/sales
-        team as we grow. We look forward to receiving your application!
-      </p>
-      <p class="font-weight-bold">
-        Your profile:
-      </p>
-      <ul>
-        <li>Enthusiastic</li>
-        <li>A self-starter</li>
-        <li>Open to new ideas and willing to pivot on short notice</li>
-      </ul>
-      <p class="font-weight-bold">
-        Technical skills:
-      </p>
-      <ul>
-        <li>Over 5 years in a marketing type role</li>
-        <li>Experience with the sales process</li>
-        <li>Preferably managed people before</li>
-        <li>Excellent written communications</li>
-      </ul>
-      <p>
-        For the right candidate Troubleshooter offers a competitive salary, monthly team outings
-        and annual learning and development budgets.
-      </p>
-    </div>
-  </div>
-
-  <!-- GROUP REFLECTION SECTION -->
-  <div id="group-reflection" class="py-5 section-group-reflection">
-    <div class="container">
-      <h2 class="mb-5">Group Reflection</h2>
-    </div>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon pulse" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon pulse" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
