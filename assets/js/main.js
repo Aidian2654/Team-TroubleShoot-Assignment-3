@@ -33,3 +33,10 @@ function showProfileSection(section) {
   $('[id^="team-profile_"]').hide();
   $(section).show();
 }
+
+// TODO: The above function and this are essentially identical and can be merged.
+function showProjectSection(section) {
+  console.log('gere')
+  $('[id^="project-plan_"]').hide();
+  $(section).show();
+}
