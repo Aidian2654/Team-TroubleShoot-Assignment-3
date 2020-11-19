@@ -1,10 +1,14 @@
 $('#carousel').carousel({
   interval: false,
   wrap: false
-})
+});
+
+function showCarouselSection(index) {
+  $('#carousel').carousel(index);
+}
 
 // Hide prev or next carousel controllers on start and last pages.
-checkCarouselItem = function() {
+function checkCarouselItem() {
   let $this;
   $this = $("#carousel");
   if ($("#carousel .carousel-inner .carousel-item:first").hasClass("active")) {
@@ -17,7 +21,7 @@ checkCarouselItem = function() {
     $this.children(".carousel-control-next").show();
     $this.children(".carousel-control-prev").show();
   }
-};
+}
 
 // On document load.
 checkCarouselItem();
