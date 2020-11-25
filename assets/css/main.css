@@ -104,3 +104,11 @@ h3 {
 .nav-link {
   cursor: pointer;
 }
+
+.timeframe-key-during {
+  background-color: rgb(218, 226, 241);
+}
+
+.timeframe-key-post {
+  background-color: rgb(247, 229, 215);
+}
