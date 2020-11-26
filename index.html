@@ -363,7 +363,22 @@
         <div id="tools" class="py-5 section-tools">
           <div class="container">
             <h2 class="mb-5">Tools</h2>
-
+            <a href="https://aidian2654.github.io/Team-TroubleShoot-Assignment-3/">Group's Website</a> <br>
+            <a href="https://github.com/Aidian2654/Team-TroubleShoot-Assignment-3">GitHub Repository</a> <br>
+            <p>
+              Our creation of the GitHub site has gone through some significant
+              changes after the feedback from assignment 2. We have followed the
+              subjections to make the site more interactive by splitting up the
+              information into separate tabs dropdown sections and sliders between
+              pages. We have also made sure to include more pictures and links to
+              ensure the audience isn’t looking at a wall of text.
+            </p>
+            <p>
+              Our GitHub Analytics show the work we all have put into our site,
+              with our focuses all spread out among the project we ensured to use
+              everyone’s skills to the greatest to achieve the best possible results.
+              All of our group pitched in and put in our part.
+            </p>
             <h3>Meeting Links</h3>
               <a href="https://teams.microsoft.com/l/team/19%3a07e46a5c14704f728b376b4c17da5bb7%40thread.tacv2/conversations?groupId=8537d4cf-c563-4812-b699-023af5409c20&tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b">MS Teams Link</a> <br>
               <a href="https://aidian2654.github.io/Team-TroubleShoot-Assignment-3/">Group's Website</a> <br>
@@ -585,20 +600,222 @@
               <h3>Plans and Progress</h3>
               <p>
                 <img src="assets/img/asset.png" align="right" style="width:150px;height:300px;padding-left:20px;"/>
-                (TODO Insert first lot of text here)
+                The concept for our team’s “Troubleshoot” Android application came
+                into fruition throughout our work on Assignment 2. Based on team
+                member Aidian’s initial assignment idea for an asset registry app,
+                our team unanimously saw the potential value and usefulness of a
+                successful implementation of Aidian’s idea – our project idea had
+                been found, and immediately we set about brainstorming ideas as
+                to what exact shape our end product would ideally take, as well
+                as what features and utilities we would attempt to incorporate.
+              </p>
+              <p>
+                  The idea was simple: the app would serve to take inventory and
+                  record data for household items, storing all relevant data
+                  (description, cost, models, date, serial numbers, photographs,
+                  receipts etc.) in an easily accessible, cloud-based solution.
+                  Within the app, the user would be able to upload a receipt,
+                  then have the app scan and import the relevant data from the
+                  receipt using Optical Character Recognition (OCR) and the
+                  device’s onboard cameras. With all the relevant product information
+                  conveniently condensed into a single application, the concept
+                  will assist users in making insurance and warranty claims, as
+                  well as provide a platform to easily organize and manage their
+                  assets. Some initial focal points decided upon in our initial
+                  Assignment 3 meetings included a “user-friendly interface” that
+                  clearly and easily displays asset information such as photos,
+                  serial numbers and descriptions, as well as the ability for users
+                  to be able to create their own custom fields in order to better
+                  organize their assets according to their individual needs.
               </p>
               <p>
                <img src="assets/img/blocks.png" align="center" style="width:100%;height:500px;padding-top:20px;"/>
               </p>
               <p>
-                  ( Plans and Progress Insert second lot of text here)
+                With some of the basic functionality of our app now fleshed out,
+                we set about deciding how we would proceed with the actual development
+                of our idea: what platform would we initially build on, and what tools
+                would we utilize in order to create our app? With limited experience
+                in app development between us, we required a solution that would be
+                simple enough to use for amateur developers such as ourselves
+                without being too limited to actually achieve at least some of
+                the features we had planned. A great solution to this problem was
+                presented by Aidian in our second group meeting in the form of
+                the MIT App Inventor.
+              </p>
+              <p>
+                The MIT App Inventor is a “blocks-based” programming environment
+                that serves to simplify the programming aspect of app development,
+                allowing the developer to issue instructions by dragging and
+                dropping visual blocks, connecting them together to form logical
+                paths. As newcomers to app development, this platform was perfect
+                for us, allowing us to jump straight into assembling the various
+                elements of our project immediately. Given that a major constraint
+                of our project has been time, the fact that this platform has
+                allowed us to immediately get to work without having to invest
+                substantial amounts of time learning Java and Android Studio
+                basics is perfect.
+              </p>
+              <p>
+                However, the simplicity of our elected platform is somewhat of a
+                double-edged sword; while it has given us the ability to proceed
+                with our project to some degree without any fundamental knowledge
+                of app development, it is not a complete substitute for a proper
+                text-based programming approach. Although this platform has enabled
+                us to achieve our more basic designs for our application, we have
+                still found it difficult to implement some of the more advanced
+                techniques such as OCR. In order to include this functionality, a
+                more in-depth understanding of Java and app development will be
+                required. That said, the App Inventor has been the perfect tool
+                for our needs and has allowed us to produce an adequate artefact
+                that demonstrates the direction of our concept within the given
+                time period.
+              </p>
+              <p>
+                Using the App Inventor, our team set about implementing many of
+                the features we had decided upon during the design process. As
+                security is of extreme importance in any app, but especially in
+                an asset registry app such as ours, a login screen requiring
+                username and password authentication has been incorporated.
+                Through Google’s Firebase toolset, application data is now
+                cloud-based, allowing for off-device storage of asset information,
+                user data and stored images. Functionality has been incorporated
+                to allow the editing of assets, as well as exporting to Excel
+                documents. These implementations have been constantly worked on
+                and refined over the course of weeks, with team members tweaking
+                elements and debugging to enhance usability and functionality.
+              </p>
+              <p>
+                Our first implementation of the login screen was a simple take
+                the username and password, store it into the database as plain
+                text and compare it on login. This approach was an extremely
+                unsecure login method that we used for testing purposes only while
+                we where implementing the asset listing and adding asset
+                functionality. For the beginning we made sure we could add assets
+                store them onto the device and display them correct. We took this
+                approach so that when we where testing the cloud storage, we would
+                have visual indications of if it was working or not.
+              </p>
+              <p>
+                After the implementation of the simple functions of adding, deleting
+                and viewing assets we set to work on the cloud-based solutions we
+                wanted to implement. First, we started with the login as we didn’t
+                want to just store the logins in plain text, we set the Realtime
+                database as not suitable to use, instead we opted for using firebases
+                authentication. This allows us to create accounts, have them email
+                verified, have a password reset option and ensure we have encrypted
+                and secure logins. Implementing these features was a challenge as
+                MIT App Inventor doesn’t make it easy to talk directly to the firebase.
+                Instead we opted for a HTML file that will handle this communication.
+                By using the App inventors WebViewer we can run a HTML file and have
+                it communicated to the Firebase and to the App inventor allowing for
+                authenticated logins.
+              </p>
+              <p>
+                Cloud storage was an interesting challenge to tackle as we wanted
+                to create an easy way to store all assets for a user into one
+                easy section to retrieve when needed. To achieve this result,
+                we made all the assets into a list which is stored as one line
+                within the firebase database that could be easily separated if
+                needed. To expand this, we also created a function that allows
+                us to separate each asset down into the individual parts such
+                as name, description, cost, etc allowing for easier implementation
+                when we add the edit asset screen.
+              </p>
+              <p>
+                Adding the edit asset function was the most challenging part of
+                the entire project. To implement this function, we needed to make
+                sure all areas of the assets where properly split up and put into
+                the correct locations. This was such a struggle due to the MIT App
+                Inventor not waiting for the firebase values when called. This means
+                if the firebase was slow sometimes the app would crash with no
+                indication for what went wrong. This issue was a struggle to diagnose
+                but once found we easily fixed it by adding a delay to the call which
+                allows for the firebase values to catchup. With this we made sure to
+                also add some more user-friendly functions like asking if you wanted
+                to delete when deleting an asset and a loading indicator when waiting
+                for values.
+              </p>
+              <p>
+                The last function we added was the Image storing for the receipts
+                and images of the item. We attempted to use the firebase storage
+                to upload all the images and call them down when needed, but where
+                unsuccessful due to the firebase storage extension being community
+                made and with several connection bugs. Instead we opted to store all
+                the images on the device to hold a proof of concept, this implementation
+                would be one of the first things I would change if we had more time.
+              </p>
+              <p>
+                With the app currently in version 10, many features have been successfully
+                implemented, while other features still require the ironing out of
+                small bugs and issues. Some small bugs are known, such as potential
+                Firebase authentication issues when attempting to login to the app.
+                With more time, tweaking and learning, these bugs will continue to be
+                ironed out and our application will become increasingly stable.
               </p>
             </div>
 
             <div style="display: none;" id="project-plan_roles">
               <h3>Roles</h3>
               <p>
-                TODO
+                The roles we have taken within our group aren’t as clear cut as
+                it might seem. Every one of our members have contributed towards
+                each area of our project, this spread of work allows for all our
+                team to communicate effectively and properly discuss the outcome
+                we want to achieve. To split our group into roles we had to look
+                at what each person contributed to the most:
+              </p>
+              <p class="font-weight-bold">
+                Aidian: Software Developer
+              </p>
+              <p>
+                Aidian’s role requires someone with software programming understanding.
+                The MIT app inventor is great for new learners to programming but
+                completing complex tasks takes a lot of problem solving. Aidian had
+                to ensure bugs where fixed, functionality was working, and cloud
+                implementation was reached.
+              </p>
+              <p class="font-weight-bold">
+                Geoffrey: Designer and Software Developer
+              </p>
+              <p>
+                Geoffrey’s role as designer would task him to create the user
+                interface for the client to use in an effortless way. This would
+                include designing the user interactions, ideas for features and
+                looks of the app and much more. Being in a small team the designer
+                will also need to have software programming skills to ensure his
+                implementations work as intended.
+              </p>
+              <p class="font-weight-bold">
+                Mitchell: Web Designer/ Video Editor
+              </p>
+              <p>
+                Mitchells role as Web Designer is essential for conveying our report.
+                This role requires knowledge and skills in web design, programming
+                and art to create a visually appealing site that will grab the users
+                attention. Video Editor is essential for our presentation. This role
+                brings together all the clips created and ties them into one neat
+                presentation that best shows off our project.
+              </p>
+              <p class="font-weight-bold">
+                Bryce: Report Writer, Editor and Video Recorder
+              </p>
+              <p>
+                Bryce’s role as Report Writer/Editor is essential to ensure all
+                reports are professional, grammatically correct and well documented,
+                this role needs great understanding of the English language and
+                professional etiquette when report writing. Bryce was also a part
+                of the video recordings for the presentation taking the role of
+                the Designer.
+              </p>
+              <p class="font-weight-bold">
+                Emre: Report Writer and Video Recorder
+              </p>
+              <p>
+                Emre’s role is very similar to Bryce’s, Report writing, and documenting
+                is an extremely important part of the production of our app. Emre
+                was also a part of the video recordings for the presentation taking
+                the role of the Software Engineer.
               </p>
             </div>
 
@@ -1249,27 +1466,27 @@
             <div style="display: none;" id="project-plan_project_artefact">
               <h3>Project Artefact</h3>
               <p>
-                To use our artefact, you will need to install it onto your device 
-                as the emulator supplied doesn’t have support for firebase authentication 
-                and the Ai2 Companion app doesn’t work with our login screen 
+                To use our artefact, you will need to install it onto your device
+                as the emulator supplied doesn’t have support for firebase authentication
+                and the Ai2 Companion app doesn’t work with our login screen
                 implemented with a HTML file.
               </p>
               <p>
-                To get the best experience you need to download the APK file either 
-                by using our download link or going to our project page, 
+                To get the best experience you need to download the APK file either
+                by using our download link or going to our project page,
                 Instructions for both are below.
               </p>
               <p class="font-weight-bold">
-                Build the Project Instructions   
+                Build the Project Instructions
               </p>
               <a href="https://gallery.appinventor.mit.edu/?galleryid=491a24b4-a9de-4ee7-8da7-ccc7543078d1">Artefact Project Link</a> <br>
               <p>
-               To be able to build the Troubleshooter app, from our project 
-                page you will need to import it into MIT App Inventor. This 
-                can be done by selecting the Load app into MIT App Inventor 
-                link. Once you have the project in the App Inventor you can 
-                choose to build the app. This will allow you to either download 
-                the APK file or ‘scan a QR code’ to download it straight 
+               To be able to build the Troubleshooter app, from our project
+                page you will need to import it into MIT App Inventor. This
+                can be done by selecting the Load app into MIT App Inventor
+                link. Once you have the project in the App Inventor you can
+                choose to build the app. This will allow you to either download
+                the APK file or ‘scan a QR code’ to download it straight
                 to your phone.
               </p>
               <figure class="figure">
@@ -1280,13 +1497,13 @@
                 Once the file is on your phone you can run the install file and use the app.
               </p>
               <p class="font-weight-bold">
-                Download the APK Instructions  
+                Download the APK Instructions
               </p>
               <a href="https://rmiteduau.sharepoint.com/sites/COSC2196IntrotoIT-ClassD-Group16/Shared Documents/General/TroubleShoot App/APK File">APK File Download</a> <br>
               <p>
-                To use this, you must download the file and put it onto your device. Once 
-                it's on your device you will just need to run the file and the app will 
-                be ready to use. 
+                To use this, you must download the file and put it onto your device. Once
+                it's on your device you will just need to run the file and the app will
+                be ready to use.
               </p>
               <a href="https://www.youtube.com/watch?v=EYKmYHnA_3U&feature=youtu.be&ab_channel=AidianWithers">Walkthrough Video of the App</a> <br>
             </div>
@@ -1408,9 +1625,50 @@
 
             <h3>Designer</h3>
             <p>
-              <!-- Emre to complete -->
+              Designing the application or website is one of the most important
+              skills and tasks for this project. In today's world presentation
+              is key. One of the most memorable moments for many consumers would
+              be the first time they see the application. At how organized it is
+              and how easy it is to access files or documents for any claim new
+              or old. The foundation of this app was built on easy accessibility
+              for the users. And that is the person we need. Someone with designing
+              skills because once the user starts the app, he/she is greeted with
+              what the designer created
             </p>
-
+            <p>
+              One of the fundamental skills that is needed is organization. The
+              home page must be organized so the user can easily find what he/she
+              is searching for, with minimal taps of course. The designer must
+              have great teamwork skills as well. He/she should be open to any feedback,
+              good or bad regarding the design of the app and its usability. And
+              lastly innovative thinking is a must. Our application must be
+              different and easier to use than our competitors' applications
+              (if we have any). We simply cannot just write and say to the customer
+              that our app is better than the other applications. We must show it.
+              We must show how our app stands out and how our designer is only one
+              of a kind. And that designer is only exclusive to the application of
+              Troubleshooter.
+            </p>
+            <p class="font-weight-bold">
+              Qualifications and experiences that are needed for this role are:
+            </p>
+            <ul>
+              <li>Tertiary qualifications in Computer science</li>
+              <li>Minimum 12 months experience in application and website designing</li>
+              <li>Experience in managing a team is desirable. </li>
+              <li>Always have a “can do” attitude</li>
+              <li>Able to work at home after business hours.</li>
+            </ul>
+            <p class="font-weight-bold">
+              Benefits include:
+            </p>
+            <ul>
+              <li>A competitive salary with fantastic penalty rates</li>
+              <li>All flights and accommodation paid if you must travel for work reasons.</li>
+              <li>Health insurance including dental</li>
+              <li>Workplace breakfast every Friday</li>
+              <li>8 weeks annual leave </li>
+            </ul>
             <h3>Senior Marketing/Sales Hybrid Role</h3>
             <p>
               We are seeking a senior marketing and sales director to lead and define Troubleshooter’s go
@@ -1460,7 +1718,25 @@
               Bryce Allen (Student Number: s3501413)
             </p>
             <p>
-              TO DO
+              Assignment 3 has been a fantastic continuation of the concepts we
+              developed throughout Assignment 2. Throughout this assignment we
+              have carried forward a fantastic sense of teamwork and group organisation,
+              working cohesively to produce what I believe to be a really solid
+              result. We got cracking nice and early developing a strong plan for
+              the entirety of the project and stuck to this plan very well. Our
+              systematic approach to the project worked very well, with each portion
+              broken down into clear steps with manageable deadlines. Aidian did
+              an awesome job in finding our platform, the MIT App Inventor, which
+              gave us a great foundation for developing the project without being
+              too hindered by our lack of experience in app development. Mitchell’s
+              broader range of knowledge helped immensely in pushing us through
+              technical roadblocks, allowing more to be done in our time limit.
+              Emre’s organisation and consistency in getting everything assigned
+              to him done incredibly quickly is to be commended, and is something
+              I have found quite inspiring. Geoff’s rapid learning of the App
+              Inventor platform and keen interest in the technical component of
+              this project has been instrumental in getting us to this point. Well
+              done everyone.
             </p>
             <p class="font-weight-bold">
               Geoffrey Boyle (Student Number: s3871416)
@@ -1508,7 +1784,23 @@
               Emre Sezgin (Student Number: s3875131)
             </p>
             <p>
-              TO DO
+              Again, as I said before, during assignment 2. I would not want to be
+              in another team other than team troubleshoot. I find myself extremely
+              lucky to be in this group with my current team members. For this assignment,
+              I felt that, because everyone knows everyone's way of working, we had a better
+              workflow for this assignment than the previous one. We started to know what
+              our core strengths were and what we had to improve upon. And what made
+              us ready as a team was at how early we started. This gave us a huge
+              head start. All in all, I am grateful to be a member for this team.
+              I have received the best assistance from my team members, and I know
+              that if I had something that was hard for me, all I had to do was ask
+              and my team members would be there for me and help me with my tasks.
+              The only downside that would come to my mind would be at how short
+              the study period was for this assignment. I'm sure that if we had
+              more time, we could have made an immense difference to this assignment. 
+              I'm not saying that we did a bad job, I'm just saying that with more
+              time comes more planning. And it is planning that makes us get through
+              this tunnel.
             </p>
             <p class="font-weight-bold">
               Aidian Withers (Student Number: s3874333)
